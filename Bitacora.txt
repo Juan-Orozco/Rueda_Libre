@@ -8,7 +8,7 @@ Puerto: 5500
 Ruta: index.html
 
 Metodo de petecion: Get
-Codigo estado: 200
+Codigo estado: primera vez que entre a la pgina 200 despues 304 porque ya tenia una copia y no se ha modificado nada
 
 Cambiando la ruta a una que no exista arroja:
 -> Cannot GET /Ptomociones.html: significa que el servidor web no encuentra el archivo 
