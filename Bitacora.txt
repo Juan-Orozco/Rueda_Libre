@@ -1,0 +1,19 @@
+Mini recto #1
+
+URL = http://127.0.0.1:5500/index.html
+
+Protocolo: HTTP://
+host: 127.0.0.1
+Puerto: 5500
+Ruta: index.html
+
+Metodo de petecion: Get
+Codigo estado: 200
+
+Cambiando la ruta a una que no exista arroja:
+-> Cannot GET /Ptomociones.html: significa que el servidor web no encuentra el archivo 
+
+Rol -> Con ejemplos
+HTML: Tiene la estructura del alquiler de las ciclas
+CSS : Da el estilo a la pagina que se vea bonita 
+JavaScript : Contiene la logica que podria ser que un usuario se registre para alquilar la ciclas
