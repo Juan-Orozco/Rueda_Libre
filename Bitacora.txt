@@ -17,3 +17,31 @@ Rol -> Con ejemplos
 HTML: Tiene la estructura del alquiler de las ciclas
 CSS : Da el estilo a la pagina que se vea bonita 
 JavaScript : Contiene la logica que podria ser que un usuario se registre para alquilar la ciclas
+
+#4
+De index.html :
+    1. Cuenta con los tres enlaces del menu:
+        <li> <a href="Paginas/Tarifas.html">Tarifas </a></li>
+        <li> <a href="Paginas/Reservas.html">Reservas </a></li>
+        <li> <a href="Paginas/Tarifas.html#RutasGuiadas">Rutas </a></li>
+    2. Un enlace que nos dirige a encuentranos:
+        <a href="#Encuentranos" > Encuentranos</a>
+    3. Un enlace que nos lleva a la tabla recorridos
+        <a href="Paginas/Tarifas.html#Tablas_recorridos"> Empieza tu aventura hoy mismo!</a>
+    4. Un enlace del correo electronico
+        <a href="mailito:tiendaruedalibre@gmail.com">Contacto correo</a>
+    5. Un enlace que me lleva a la ubicacion del lugar
+        <a href="https://www.google.com/maps/place/Riwi/@6.2191063,-75.5861952,17z/data=!3m1!4b1!4m6!3m5!1s0x8e44293f0e114eef:0x99610cdd44c7c081!8m2!3d6.219101!4d-75.5836149!16s%2Fg%2F11l2x8f5ch?entry=ttu&g_ep=EgoyMDI2MTAxOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Visitanos!</a>  
+
+De Reservas.html:
+    1. Inicialmente los mismos enlces del menu mostrados anteriormente
+    2.Un enlace para que se conecten a el correo electronico
+        <a href="mailito:tiendaruedalibre@gmail.com">Contacto correo</a>
+    3. 
+
+De Tarifas.html:
+    1. Inicialmente los mismos enlces del menu mostrados anteriormente.
+    2. Dos enlaces a rerservas debajo de cada tabla
+        <a href="Reservas.html">Reservar ahora</a>
+    3. Un enlace al final de la pagina que nos devuelve a el inicio 
+        <a href="../index.html">Visita Nuestras otras opciones</a>
