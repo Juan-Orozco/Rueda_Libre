@@ -18,7 +18,7 @@ HTML: Tiene la estructura del alquiler de las ciclas
 CSS : Da el estilo a la pagina que se vea bonita 
 JavaScript : Contiene la logica que podria ser que un usuario se registre para alquilar la ciclas
 
-#4
+#4 Registro de los enlaces: 
 De index.html :
     1. Cuenta con los tres enlaces del menu:
         <li> <a href="Paginas/Tarifas.html">Tarifas </a></li>
