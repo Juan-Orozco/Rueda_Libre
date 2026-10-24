@@ -7,64 +7,88 @@
 
     </head>
     <body>
-        <h1> Alquilar es conocer el mundo</h1>
-        <ol>
-            <li> <a href="../index.html">inicio </a></li>
-            <li> <a href="Reservas.html">Reservas </a></li>
-            <li> <a href="Tarifas.html#RutasGuiadas">Rutas </a></li>
-        </ol>
-        
-        <img src="../img/images.jpg" alt="Logo" widt="200">
+        <header>
+            <img src="../img/images.jpg" alt="logo bicicleyta" widt="100">
+            <h1> Alquilar es conocer el mundo</h1>
+            <nav>
+                <ol>
+                    <li> <a href="../index.html">inicio </a></li>
+                    <li> <a href="Reservas.html">Reservas </a></li>
+                    <li> <a href="Tarifas.html#RutasGuiadas">Rutas </a></li>
+                </ol>
+            </nav>
+            
+        </header>
 
+        <main>
+            <section>
+                <table border="1" >
+                    <caption> <strong>Tarifas </strong></caption>
+                    <thead>
+                        <tr>
+                            <th scope="col"> Tipo bicicleta</th>
+                            <th scope="col"> 1 hora</th>
+                            <th scope="col"> medio día (4h)</th>
+                            <th scope="col"> Dia Completo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr scope="row"><td>Urbana</td><td>$10.000</td><td>$30.000</td><td>$50.000</td></tr>
+                        <tr scope="row"><td>Montaña</td><td>$15.000</td><td>$45.000</td><td>$70.000</td></tr>
+                        <tr scope="row"><td>electrica</td><td>$25.000</td><td>$70.000</td><td>$110.000</td></tr>
+                    </tbody>
+                </table>
+                <a href="Reservas.html">Reservar ahora</a>
+                <p>         </p>
+                <p>Las tarifas incluyen<strong> casco y candado.</strong> </p>
+                <p>             </p>
 
-        <table border="1" >
-            <caption> <strong>Tarifas </strong></caption>
-            <thead>
-                <tr>
-                    <th scope="col"> Tipo bicicleta</th>
-                    <th scope="col"> 1 hora</th>
-                    <th scope="col"> medio día (4h)</th>
-                    <th scope="col"> Dia Completo</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr scope="row"><td>Urbana</td><td>$10.000</td><td>$30.000</td><td>$50.000</td></tr>
-                <tr scope="row"><td>Montaña</td><td>$15.000</td><td>$45.000</td><td>$70.000</td></tr>
-                <tr scope="row"><td>electrica</td><td>$25.000</td><td>$70.000</td><td>$110.000</td></tr>
-            </tbody>
-        </table>
-        <a href="Reservas.html">Reservar ahora</a>
-        <p>         </p>
-        <p>Las tarifas incluyen<strong> casco y candado.</strong> </p>
-        <p>             </p>
-        <table border="1" >
-            <caption ><strong>Rutas guiadas</strong></caption>
-            <thead>
-                <tr>
-                    <th scope="col"> Recorrido</th>
-                    <th scope="col"> Distancia</th>
-                    <th scope="col"> Duración   </th>
-                    <th scope="col"> Nivel</th>
-                    <th scope="col"> Precio por persona</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr scope="row"><td>Río y Parques</td><td>12 km</td><td>2 horas</td><td>Facil</td><td>$45.000</td></tr>
-                <tr scope="row"><td>Sabores de Barrio</td><td>18 km</td><td>3 horas</td><td>Medio </td><td>$60.000</td></tr>
-                <tr scope="row"><td>Reto Las Palmas</td><td>25 km</td><td>4 horas</td><td>Dificil</td><td>$85.000</td></tr>
-            </tbody>
-        </table>
-        <a href="Reservas.html">Reservar ahora</a>
-        <p>         </p>
-        <p>Los recorridos salen <strong>sábados y domingos </strong>a las 7:00 a. m.  </p>
-        <p id="RutasGuiadas"><strong>Qué llevar: </strong> ropa cómoda, agua, protector solar y documento de identidad.</p>
-        
-        <a href="../index.html">Visita Nuestras otras opciones</a>
+            </section>
+            
+            <section>
+                <table border="1" >
+                    <caption ><strong>Rutas guiadas</strong></caption>
+                    <thead>
+                        <tr>
+                            <th scope="col"> Recorrido</th>
+                            <th scope="col"> Distancia</th>
+                            <th scope="col"> Duración   </th>
+                            <th scope="col"> Nivel</th>
+                            <th scope="col"> Precio por persona</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr scope="row"><td>Río y Parques</td><td>12 km</td><td>2 horas</td><td>Facil</td><td>$45.000</td></tr>
+                        <tr scope="row"><td>Sabores de Barrio</td><td>18 km</td><td>3 horas</td><td>Medio </td><td>$60.000</td></tr>
+                        <tr scope="row"><td>Reto Las Palmas</td><td>25 km</td><td>4 horas</td><td>Dificil</td><td>$85.000</td></tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <figure>
+                <a href="Reservas.html">Reservar ahora</a>
+                <p>         </p>
+                <p>Los recorridos salen <strong>sábados y domingos </strong>a las 7:00 a. m.  </p>
+            </figure>
+        </main>
+
+        <aside>          
+            <ol id="RutasGuiadas"><strong>Qué llevar: </strong> 
+                <li>Ropa cómoda</li>
+                <li>Agua</li>
+                <li>Protector solar</li>
+                <li>Documento de identidad</li>
+            </ol>
+        </aside>  
+
+        <figure>
+            <a href="../index.html">Visita Nuestras otras opciones</a>
+        </figure>
 
         <footer>
-         <p>&copy; Rueda Libre .</p>
-         <p>Contacto: ruedalibre@gmail.com</p>
-         <p>Año: 2026</p>
+            <p>&copy; Rueda Libre .</p>
+            <p>Contacto: ruedalibre@gmail.com</p>
+            <p>Año: 2026</p>
         </footer>
     </body>
     </html>
