@@ -19,10 +19,85 @@
     </header>
 
     <main>
+        <form action="gracias.html" method="get"></form>
+            <fieldset>
+                <legend>Tus datos</legend>
+                <label for="nombre">*Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
 
+                <br><br>
+
+                <label for="email">*Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+                <br><br>
+
+                <label for="celular">*Celular:</label>
+                <input type="tel" id="celular" name="celular" placeholder="3001234567" pattern="3[0-9]{9}" title="El número debe tener 10 dígitos y empezar por 3." required >
+
+                <br><br>
+                
+                <label for="nombre">*Numero de documento:</label>
+                <input type="text" id="documento" name="documento" placeholder="Escriba su documento:  " required>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Tu alquiler</legend>
+                    <label for="fecha_hora_reserva">Selecciona el día y la hora: </label>
+                    <input type="datetime-local" id="fecha_hora_reserva" name="fecha_hora_reserva" required>
+                    <p> Selecione el tipo de bicicleata:</p>
+                    <input type="radio" id="Urbana" name="tipo" value="Bici_Urbana" required >
+                    <label for="empezando">Urbana</label>
+                    <input type="radio" id="Eléctrica" name="tipo" value="Bici_Electrica" required >
+                    <label for="empezando">Eléctrica</label>
+                    <input type="radio" id="Montaña" name="tipo" value="Bici_montaña" required >
+                    <label for="empezando">Montaña</label>
+
+                    <p> Selecione el plan:</p>
+                    <input type="radio" id="hora" name="horario" value="hora" required >
+                    <label for="empezando">1 hora</label>
+                    <input type="radio" id="Medio" name="horario" value="Medio" required >
+                    <label for="empezando">Medio dia</label>
+                    <input type="radio" id="completo" name="horario" value="completo" required >
+                    <label for="empezando">Dia completo</label>
+
+                    <p> Selecione la ruta:</p>
+                    <input type="radio" id="ninguna" name="ruta" value="ninguna" required >
+                    <label for="empezando">Ninguna</label>
+                    <input type="radio" id="Parques" name="ruta" value="Río_y_Parques" required >
+                    <label for="empezando">Río y Parques</label>
+                    <input type="radio" id="Barrio" name="ruta" value="Sabores_de_arrio" required >
+                    <label for="empezando">Sabores de Barrio	</label>
+                    <input type="radio" id="Palmas" name="ruta" value="Reto _Las_Palmas" required >
+                    <label for="empezando">Reto Las Palmas</label>
+
+                    <p>
+                        <label for="cantidad_bicis">Cantidad de bicicletas:</label>
+                        <input type="number" id="cantidad_bicis" name="cantidad_bicis" min="1" max="5" value="1" required>
+                    </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Confirmación</legend>
+                <label for="que_esperas"> Observaciones: </label> <br>
+                <textarea type="text" id="nombre" name="nombre"  placeholder=""></textarea>
+                <br><br>
+
+                <input type="checkbox" id="acepto_conducta" name="acepta_conducta" value="Si" required>
+
+                <label for="acepto_conducta"> Acepto las politicas del alquiler. </label>
+
+                <br><br>
+
+                <button type="submit">Inscribirme</button>
+                
+
+            </fieldset>
         
         
     </main>
+
     <aside>
         <h3> Horario de atencion</h3>
         <dl>
