@@ -1,0 +1,260 @@
+/* =========================================================
+   VARIABLES (escala de diseño)
+   ========================================================= */
+:root {
+    --color-Titulos-Encabezados: #14213D;
+    --color-Botones-Componentes: #1E7A4F;
+    --color-Fondo-general: #FAF6EF;
+    --color-Texto-Secundario: #5B6470;
+    --color-Texto-general: #000;
+    --color-subrrallado: #cc1717;
+
+    /* Espaciado (todo en rem) */
+    --Espaciado-pequeno: 0.5rem;
+    --Espaciado-mediano: 1rem;
+    --Espaciado-grande: 2rem;
+
+    /* Fuentes */
+    --fuente-titulos: 'Montserrat', sans-serif;
+    --fuente-parrafos: 'Open Sans', sans-serif;
+}
+
+/* =========================================================
+   1. BOX MODEL: el ancho incluye padding y border
+   ========================================================= */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   BASE
+   ========================================================= */
+body {
+    margin: 0;
+    font-family: var(--fuente-parrafos);
+    background-color: var(--color-Fondo-general);
+    color: var(--color-Texto-general);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-Titulos-Encabezados);
+}
+
+/* Ninguna imagen puede ser más ancha que su contenedor */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header,
+footer {
+    padding: var(--Espaciado-mediano);
+}
+
+footer {
+    margin-top: var(--Espaciado-grande);
+    border-top: 1px solid var(--color-Texto-Secundario);
+}
+
+/* =========================================================
+   2. CONTENIDO PRINCIPAL: ancho máximo en rem y centrado
+   ========================================================= */
+main,
+aside {
+    width: 100%;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 var(--Espaciado-mediano);
+}
+
+section {
+    margin-bottom: var(--Espaciado-grande);
+}
+
+/* Portada de inicio: altura mínima relativa a la ventana */
+.portada {
+    min-height: 70vh;
+}
+
+/* =========================================================
+   6. MENÚ EN UNA FILA
+   ========================================================= */
+#menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    display: inline-block;   /* los <li> son block por defecto: así quedan en fila */
+}
+
+#menu a {
+    display: inline-block;   /* para que el padding vertical sí ocupe espacio */
+    padding: var(--Espaciado-pequeno);
+    color: var(--color-Texto-Secundario);
+    text-decoration: none;
+}
+
+#menu a.activo {
+    color: var(--color-Botones-Componentes);
+    font-weight: 600;
+}
+
+#menu a:hover,
+#menu a:focus {
+    color: var(--color-Botones-Componentes);
+}
+
+/* =========================================================
+   BOTÓN CTA
+   ========================================================= */
+.boton-cta {
+    display: inline-block;
+    padding: var(--Espaciado-pequeno) var(--Espaciado-mediano);
+    border-radius: var(--Espaciado-pequeno);
+    background-color: var(--color-Botones-Componentes);
+    color: var(--color-Fondo-general);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.boton-cta:hover,
+.boton-cta:focus {
+    background-color: var(--color-Titulos-Encabezados);
+}
+
+/* =========================================================
+   3. TARJETAS DE SERVICIOS
+   ========================================================= */
+.servicio {
+    width: 100%;                                  /* clave para la medición de la bitácora */
+    padding: var(--Espaciado-mediano);
+    border: 1px solid var(--color-Texto-Secundario);
+    border-radius: var(--Espaciado-pequeno);
+    margin-bottom: var(--Espaciado-grande);
+}
+
+/* Imagen al ancho completo de la tarjeta */
+.servicio img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--Espaciado-grande);
+}
+
+caption {
+    padding: var(--Espaciado-pequeno);
+    font-family: var(--fuente-titulos);
+}
+
+th,
+td {
+    padding: var(--Espaciado-pequeno) var(--Espaciado-mediano);
+    border: 1px solid var(--color-Texto-Secundario);
+    text-align: left;
+}
+
+/* Encabezados de columna con color de marca (contraste ~15:1) */
+thead th {
+    background-color: var(--color-Titulos-Encabezados);
+    color: var(--color-Fondo-general);
+}
+
+/* Encabezados de fila: solo en negrita, sin fondo */
+tbody th {
+    font-weight: 600;
+}
+
+/* =========================================================
+   5. FORMULARIO
+   ========================================================= */
+form {
+    width: 100%;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+form fieldset {
+    margin-bottom: var(--Espaciado-grande);
+    padding: var(--Espaciado-mediano);
+    border: 1px solid var(--color-Texto-Secundario);
+    border-radius: var(--Espaciado-pequeno);
+}
+
+form legend {
+    padding: 0 var(--Espaciado-pequeno);
+    font-family: var(--fuente-titulos);
+    font-weight: 600;
+    color: var(--color-Titulos-Encabezados);
+}
+
+/* Cada etiqueta en su propia línea, sobre su campo */
+form label {
+    display: block;
+    margin-bottom: var(--Espaciado-pequeno);
+}
+
+/* Excepción: la etiqueta de un radio/checkbox va al lado de su botón */
+form input[type="radio"] + label,
+form input[type="checkbox"] + label {
+    display: inline-block;
+    margin-right: var(--Espaciado-mediano);
+    margin-bottom: 0;
+}
+
+/* Campos de texto a todo el ancho disponible */
+form input:not([type="radio"]):not([type="checkbox"]),
+form select,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: var(--Espaciado-pequeno);
+    margin-bottom: var(--Espaciado-mediano);
+    border: 1px solid var(--color-Texto-Secundario);
+    border-radius: var(--Espaciado-pequeno);
+    font: inherit;
+}
+
+form textarea {
+    min-height: 6rem;
+    resize: vertical;
+}
+
+/* Separación entre grupos de opciones */
+.grupo-opciones {
+    margin-bottom: var(--Espaciado-mediano);
+}
+
+.grupo-opciones p {
+    margin: 0 0 var(--Espaciado-pequeno);
+    font-weight: 600;
+}
+
+form button {
+    display: inline-block;
+    margin-top: var(--Espaciado-mediano);
+    padding: var(--Espaciado-mediano) var(--Espaciado-grande);
+    border: none;
+    border-radius: var(--Espaciado-pequeno);
+    background-color: var(--color-Botones-Componentes);
+    color: var(--color-Fondo-general);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form button:hover,
+form button:focus {
+    background-color: var(--color-Titulos-Encabezados);
+}

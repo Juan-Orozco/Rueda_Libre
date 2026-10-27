@@ -1,6 +1,10 @@
     <!DOCTYPE html>
     <html lang="es">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/styles.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
@@ -10,12 +14,13 @@
         <header>
             <img src="../img/images.jpg" alt="logo bicicleyta" widt="100">
             <h1> Alquilar es conocer el mundo</h1>
-            <nav>
-                <ol>
+            <nav >
+                <ul id ="menu">
                     <li> <a href="../index.html">inicio </a></li>
                     <li> <a href="Reservas.html">Reservas </a></li>
-                    <li> <a href="Tarifas.html#RutasGuiadas">Rutas </a></li>
-                </ol>
+                    <li> <a href="Tarifas.html" class="activo">Tarifas </a></li>
+                    <li> <a href="Tarifas.html#RutasGuiadas" class="activo">Rutas </a></li>
+                </ul>
             </nav>
             
         </header>
@@ -38,7 +43,7 @@
                         <tr scope="row"><td>electrica</td><td>$25.000</td><td>$70.000</td><td>$110.000</td></tr>
                     </tbody>
                 </table>
-                <a href="Reservas.html">Reservar ahora</a>
+                <a href="Reservas.html" class="boton-cta">Reservar ahora</a>
                 <p>         </p>
                 <p>Las tarifas incluyen<strong> casco y candado.</strong> </p>
                 <p>             </p>
@@ -66,7 +71,7 @@
             </section>
             
             <figure>
-                <a href="Reservas.html">Reservar ahora</a>
+                <a href="Reservas.html" class="boton-cta">Reservar ahora</a>
                 <p>         </p>
                 <p>Los recorridos salen <strong>sábados y domingos </strong>a las 7:00 a. m.  </p>
             </figure>

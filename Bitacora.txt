@@ -45,3 +45,50 @@ De Tarifas.html:
         <a href="Reservas.html">Reservar ahora</a>
     3. Un enlace al final de la pagina que nos devuelve a el inicio 
         <a href="../index.html">Visita Nuestras otras opciones</a>
+
+#Contarste de colores
+    Verde Ruta #1E7A4F
+        - Graphical Objects and User Interface Components  pass
+    Naranja Pedal #F39A2B
+        - Destacados y botones secundarios -> Fall
+    Azul Noche #14213D
+        - Títulos y encabezado -> pass
+    Crema #FAF6EF 
+        - Fondo general -> Fall
+    Gris Asfalto #5B6470 
+        Texto secundario -> Pass
+
+#5 por qué la clase no se aplica
+  |  Pedazo del selector	| Cómo se reconoce	|  Puntos
+  |     id	                | Empieza con #	    |   100
+  |    clase	            | empieza con .	    |    10
+  |    etiqueta	     |solo la palabra: a, p, body  |  1
+
+
+
+
+
+
+
+  ---------
+  form input[type="radio"] {
+    display: inline-block;
+    width: auto;
+    margin: 0 0.4rem 0 0;
+    padding: 0;
+}
+
+form input[type="radio"] + label {
+    display: inline-block;
+    margin: 0 1rem 0.8rem 0;
+}
+
+/* Separación entre los grupos de opciones */
+form fieldset p {
+    margin: 1rem 0 0.7rem;
+}
+
+/* Evita que los saltos de línea fuerzen la separación */
+form fieldset br {
+    display: none;
+}
