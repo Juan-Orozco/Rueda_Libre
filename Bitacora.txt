@@ -70,25 +70,7 @@ De Tarifas.html:
 
 
 
-  ---------
-  form input[type="radio"] {
-    display: inline-block;
-    width: auto;
-    margin: 0 0.4rem 0 0;
-    padding: 0;
-}
-
-form input[type="radio"] + label {
-    display: inline-block;
-    margin: 0 1rem 0.8rem 0;
-}
-
-/* Separación entre los grupos de opciones */
-form fieldset p {
-    margin: 1rem 0 0.7rem;
-}
-
-/* Evita que los saltos de línea fuerzen la separación */
-form fieldset br {
-    display: none;
-}
+Semana 2 
+Dia1 
+Estrecha poco a poco la ventana del navegador y describe en la bitácora qué ocurre:
+    - Como agregamos
